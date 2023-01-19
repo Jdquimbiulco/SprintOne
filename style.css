@@ -1,0 +1,81 @@
+#logo{
+    padding: 40px;
+    position: absolute;
+}
+
+body{
+    background: #E5E5E5;
+}
+
+.inputTexto{
+    position: absolute;
+    resize: none;
+    width: 680px;
+    height: 288px;
+    left: 240px;
+    top: 168px;
+    text-transform: lowercase;
+    line-height: 150%;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    background-color: #E5E5E5;
+    border: none;
+    
+}
+
+.botones{
+    position: absolute;
+    left: 250px;
+    bottom: 200px;
+
+}
+
+#botonEncriptar{
+    background-color: #0A3871;
+    border-color: #0A3871;
+    border-radius: 24px;
+    color:#E5E5E5;
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+}
+
+#botonDesencriptar{
+    background-color:#E5E5E5;
+    border-color: #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+#botonEncriptar:hover{
+    cursor: pointer;
+    
+}
+
+#botonDesencriptar:hover{
+    cursor: pointer;
+}
+
+.mostrarTexto{
+    border: #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px;
+    
+
+}
