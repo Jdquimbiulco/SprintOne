@@ -81,7 +81,7 @@ body{
 }
 
 
-.munheco{
+#munheco{
     position:absolute;
     width: 336px;
     height: 304px;
@@ -90,7 +90,7 @@ body{
 }
     
 
-.munheco h2{
+#munheco h2{
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -99,7 +99,7 @@ body{
     color: #343A40;
 }
 
-.munheco h3{
+#munheco h3{
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-style: normal;
