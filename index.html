@@ -25,18 +25,45 @@
                     document.getElementById("munheco").style.display = "none";
                 }
             </script>
+            
+            <script>
+
+                function reemplazar(){
+                
+                    var input = document.getElementById("mensaje").value;
+                    var MensajeNuevo = input.replace(/a/g,"a").replace(/e/g,"enter").replace(/i/g,"imes").replace(/o/g,"ober").replace(/u/g,"ufat").replace(/a/g,"ai");
+
+                    document.getElementById("mensajeDesencriptado").value = MensajeNuevo;
+
+                }
+
+                function desencriptar (){
+
+                    
+                }
+
+               
+
+
+                var botonEncriptar = document.getElementById("botonEncriptar");
+                var botonDesencriptar = document.getElementById("botonDesencriptar");
+            	
+                
+            </script>
+            
+            
             <div>
                 <p id="aviso">Solo letras minúsculas y sin acentos</p>
                 <img id="iconoAlerta" src="imagenes/Aviso.png">
             </div>
 
             <div class="botones">
-                <button id="botonEncriptar"> Encriptar</button>
-                <button id="botonDesencriptar"> Desencriptar</button>
+                <button type="button" id="botonEncriptar" onclick="reemplazar()"> Encriptar</button>
+                <button type="button" id="botonDesencriptar"> Desencriptar</button>
             </div>
 
             <div >
-                <textarea class="mostrarTexto" onclick="munhecoDisplay()"> </textarea> 
+                <textarea id = "mensajeDesencriptado" class="mostrarTexto" onclick="munhecoDisplay()"> </textarea> 
             </div>
            
             <div id="munheco">
