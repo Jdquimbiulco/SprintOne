@@ -28,7 +28,7 @@
             
             <script>
 
-                function reemplazar(){
+                function encriptar(){
                 
                     var input = document.getElementById("mensaje").value;
                     var MensajeNuevo = input.replace(/a/g,"a").replace(/e/g,"enter").replace(/i/g,"imes").replace(/o/g,"ober").replace(/u/g,"ufat").replace(/a/g,"ai");
@@ -39,15 +39,11 @@
 
                 function desencriptar (){
 
-                    
-                }
+                    var input = document.getElementById("mensaje").value;
+                    var MensajeNuevo = input.replace(/ai/g,"ai").replace(/enter/g,"e").replace(/imes/g,"i").replace(/ober/g,"o").replace(/ufat/g,"u").replace(/ai/g,"a");
 
-               
-
-
-                var botonEncriptar = document.getElementById("botonEncriptar");
-                var botonDesencriptar = document.getElementById("botonDesencriptar");
-            	
+                    document.getElementById("mensajeDesencriptado").value = MensajeNuevo;
+                }            	
                 
             </script>
             
@@ -58,8 +54,8 @@
             </div>
 
             <div class="botones">
-                <button type="button" id="botonEncriptar" onclick="reemplazar()"> Encriptar</button>
-                <button type="button" id="botonDesencriptar"> Desencriptar</button>
+                <button type="button" id="botonEncriptar" onclick="encriptar()"> Encriptar</button>
+                <button type="button" id="botonDesencriptar" onclick="desencriptar()"> Desencriptar</button>
             </div>
 
             <div >
@@ -71,9 +67,6 @@
                 <h2>Ningun mensaje fue encontrado</h2>
                 <h3>Ingresa el texto que deseas encriptar o desencriptar</h3>
             </div>
-            
-
-
         </main>
     </body>
 
