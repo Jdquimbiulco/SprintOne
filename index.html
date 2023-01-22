@@ -5,6 +5,7 @@
     <head>
         
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -43,7 +44,16 @@
                     var MensajeNuevo = input.replace(/ai/g,"ai").replace(/enter/g,"e").replace(/imes/g,"i").replace(/ober/g,"o").replace(/ufat/g,"u").replace(/ai/g,"a");
 
                     document.getElementById("mensajeDesencriptado").value = MensajeNuevo;
-                }            	
+                }   
+                
+                function copy() {
+                    
+                    let copyText = document.getElementById("mensajeDesencriptado");
+                    copyText.select();
+                    document.execCommand("copy");               
+                
+                }
+
                 
             </script>
             
@@ -60,6 +70,7 @@
 
             <div >
                 <textarea id = "mensajeDesencriptado" class="mostrarTexto" onclick="munhecoDisplay()"> </textarea> 
+                <button type="button" id="botonCopy" onclick="copy()"> Copiar </button>
             </div>
            
             <div id="munheco">

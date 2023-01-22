@@ -126,6 +126,43 @@ body{
     font-size: 24px;
     color: #495057;
     resize: none;
+    text-transform: lowercase;
 }
 
+#botonCopy{
+    background-color:#E5E5E5;
+    border-color: #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    left: 1040px;
+    bottom: 40px;
 
+}
+
+#botonCopy:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px){
+
+    .mostrarTexto,.botones,#botonCopy, #aviso{ 
+        width: 100%; 
+        height: auto;
+        position: static;
+    }
+    
+    #logo,.inputTexto, #munheco,h2,h3 {
+        position: static;
+        width: auto;
+    }
+
+    #iconoAlerta{
+        position: relative;
+    }
+
+}
